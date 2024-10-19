@@ -1,0 +1,78 @@
+{% extends "admin/layout.html" %}
+
+{% block main_content %}
+	<div class="main-panel">
+          <div class="content-wrapper">
+
+             <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-account"></i>
+                </span> User List
+              </h3>
+
+            </li>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+
+                          <th> Profile </th>
+                          <th> Full Name </th>
+                          <th> Gender </th>
+                          <th> Role </th>
+                          <th> Email </th>
+                          <th> Phone </th>
+                          <th> Address </th>
+                         <th> Action </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+
+
+                          <td class="py-1">
+                            <img src="/static/admin/images/faces-clipart/pic-1.png" alt="image">
+                          </td>
+                          <td> Herman Beck </td>
+                          <td> F </td>
+                          <td> GM </td>
+                          <td> gmail.com </td>
+                          <td> 77.99 </td>
+                          <td> PP </td>
+                          <td>
+                                    <a href="/admin/dashboard"><i
+                                            class="fa fa-edit text-primary"></i></a>
+                                    <a>
+                                        <i class="fa fa-trash text-xl p-1 text-danger"></i>
+                                    </a>
+                                </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+         <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024. All rights reserved.</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted &amp; made with <i class="mdi mdi-heart text-danger"></i></span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+{% endblock %}
